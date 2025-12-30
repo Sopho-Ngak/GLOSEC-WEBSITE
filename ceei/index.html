@@ -6,6 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title> CEEI - Business Consulting </title>
+	<link rel="icon" href="images/logo.jpg" type="image/png">
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Fontawesome CSS -->
@@ -16,86 +17,13 @@
 	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/style.css" rel="stylesheet">
+	<!-- Language Support CSS -->
+	<link href="css/language-support.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper-main">
-	<!-- Top Bar -->
-	<div class="top-bar">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="social-media">
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="contact-details">
-						<ul>
-							<li><i class="fas fa-phone fa-rotate-90"></i> +250 790 040 651 / +235 664 012 76</li>
-							<li><i class="fas fa-map-marker-alt"></i> Kigali, RW</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light top-nav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-				<img src="images/logo-v.png" alt="logo" width="150"/>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fas fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="services.html">Services</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="fas fa-sort-down"></i></a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="faq.html">FAQ</a>
-							<a class="dropdown-item" href="404.html">404</a>
-							<a class="dropdown-item" href="pricing.html">Pricing Table</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <i class="fas fa-sort-down"></i></a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-							<a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-							<a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="fas fa-sort-down"></i></a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="blog.html">Blog</a>
-							<a class="dropdown-item" href="blog-post.html">Blog Post</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-            </div>
-			<div id="google_translate_element"></div>
-        </div>
-    </nav>
+	<!-- Header Placeholder -->
+	<div id="header-placeholder"></div>
 	
     <header class="slider-main">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
@@ -106,34 +34,34 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                <!-- Slide One - Set the background image for this slide in the line below -->
-               <div class="carousel-item active" style="background-image: url('images/slider-01.jpg')">
+               <div class="carousel-item active" style="background-image: url('images/image-site.png')">
                   <div class="carousel-caption d-none d-md-block">
-                     <h3>Welcome to CEEI</h3>
-                     <p>Cabinet d’évaluation environmentale et Ingénierie</p>
+                     <h3 data-translate="slider_title1">Bienvenue chez CEEI</h3>
+                     <p data-translate="slider_subtitle1">Cabinet d'Évaluation Environnementale et Ingénierie</p>
                   </div>
                </div>
                <!-- Slide Two - Set the background image for this slide in the line below -->
-               <div class="carousel-item" style="background-image: url('images/slider-02.jpg')">
+               <div class="carousel-item" style="background-image: url('images/cons1.jpg')">
                   <div class="carousel-caption d-none d-md-block">
-                     <h3>Best Consulting Services.</h3>
-                     <p>Cabinet d’évaluation environmentale et Ingénierie</p>
+                     <h3 data-translate="slider_title2">Meilleurs Services de Conseil</h3>
+                     <p data-translate="slider_subtitle2">Cabinet d'Évaluation Environnementale et Ingénierie</p>
                   </div>
                </div>
                <!-- Slide Three - Set the background image for this slide in the line below -->
                <div class="carousel-item" style="background-image: url('images/slider-03.jpg')">
                   <div class="carousel-caption d-none d-md-block">
-                     <h3>Welcome to CEEI</h3>
-                     <p>Cabinet d’évaluation environmentale et Ingénierie</p>
+                     <h3 data-translate="slider_title3">Bienvenue chez CEEI</h3>
+                     <p data-translate="slider_subtitle3">Cabinet d'Évaluation Environnementale et Ingénierie</p>
                   </div>
                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
+				<span class="sr-only" data-translate="previous">Précédent</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
+				<span class="sr-only" data-translate="next">Suivant</span>
             </a>
         </div>
     </header>
@@ -145,18 +73,18 @@
             <div class="row">
 				<!-- justify the text of this div -->
                <div class="col-lg-6" style="text-align: justify;">
-                  <h2>Welcome to CEEI</h2>
-                  <p>Global Safety and Environment Consultancy (GLOSEC) est un Cabinet tchadien, spécialisé, non seulement, en Etude d’Impact Environnemental et social (EIES), principalement des projets d’exploration et d’exploitation pétrolière au Tchad, mais aussi, en Monitoring environnemental et social des travaux infrastructures industriels et Management du Contrôle-Qualité, de l'Hygiène, de la Sécurité et de l'Environnement (QHSE)</p>
-                  <p>Le Bureau a été mis en place, en juin 2014 par les cadres tchadiens, ayant acquis plusieurs années d’expériences en matière d’évaluation environnementale et sociale, de sécurité au travail sur le site pétrolier de Komé, Badila et Mangara</p>
-				  <h5>Our smart approach</h5>
+                  <h2 data-translate="about_title">Bienvenue chez CEEI</h2>
+                  <p data-translate="about_text1">Global Safety and Environment Consultancy (GLOSEC) est un Cabinet tchadien, spécialisé, non seulement, en Étude d'Impact Environnemental et social (EIES), principalement des projets d'exploration et d'exploitation pétrolière au Tchad, mais aussi, en Monitoring environnemental et social des travaux d'infrastructures industrielles et Management du Contrôle-Qualité, de l'Hygiène, de la Sécurité et de l'Environnement (QHSE).</p>
+                  <p data-translate="about_text2">Le Bureau a été mis en place, en juin 2014 par les cadres tchadiens, ayant acquis plusieurs années d'expériences en matière d'évaluation environnementale et sociale, de sécurité au travail sur le site pétrolier de Komé, Badila et Mangara.</p>
+				  <h5 data-translate="about_approach">Notre approche intelligente</h5>
                   <ul>
-                     <li>Prévention et Analyse des risques.</li>
-                     <li>Importance d’utilisation des équipements de sécurité: protection des personnes et des biens.</li>
-                     <li>Préventions des accidents de travail.</li>                     
+                     <li data-translate="approach_item1">Prévention et Analyse des risques.</li>
+                     <li data-translate="approach_item2">Importance d'utilisation des équipements de sécurité : protection des personnes et des biens.</li>
+                     <li data-translate="approach_item3">Préventions des accidents de travail.</li>                     
                   </ul>
                </div>
                <div class="col-lg-6">
-                  <img class="img-fluid rounded" src="images/about-img.jpg" alt="" />
+                  <img class="img-fluid rounded" src="images/glosec-t1.png" alt="" />
                </div>
             </div>
             <!-- /.row -->
@@ -165,7 +93,7 @@
 	
 	<div class="services-bar">
 		<div class="container">
-			<h1 class="py-4">Our Best Services </h1>
+			<h1 class="py-4" data-translate="services_title">Nos Meilleurs Services</h1>
 			<!-- Services Section -->
 			<div class="row">
 			   <div class="col-lg-4 mb-4">
@@ -174,8 +102,8 @@
 							<img class="img-fluid" src="images/EngagementEnvironnemental.jpg" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body" style="text-align: justify;">
-							<h4 class="card-header" style="text-align: left;">🌍 Environnement</h4>
-							<p class="card-text">Études et suivi pour limiter les impacts environnementaux et sociaux.</p>
+							<h4 class="card-header" style="text-align: left;" data-translate="service1_title">🌍 Environnement</h4>
+							<p class="card-text" data-translate="service1_desc">Études et suivi pour limiter les impacts environnementaux et sociaux.</p>
 						</div>
 					</div>
 			   </div>
@@ -185,8 +113,8 @@
 							<img class="img-fluid" src="images/notice.png" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body" style="text-align: justify;">
-							<h4 class="card-header" style="text-align: left;">📊 Audits</h4>
-							<p class="card-text">Vérification de conformité et optimisation des performances.</p>
+							<h4 class="card-header" style="text-align: left;" data-translate="service2_title">📊 Audits</h4>
+							<p class="card-text" data-translate="service2_desc">Vérification de conformité et optimisation des performances.</p>
 						</div>
 					</div>
 			   </div>
@@ -196,8 +124,8 @@
 							<img class="img-fluid" src="images/formation.png" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body">
-							<h4 class="card-header"> 📚 Formations </h4>
-							<p class="card-text">Sessions pratiques pour renforcer les compétences en QHSE.</p>
+							<h4 class="card-header" data-translate="service3_title"> 📚 Formations </h4>
+							<p class="card-text" data-translate="service3_desc">Sessions pratiques pour renforcer les compétences en QHSE.</p>
 						</div>
 					</div>
 			   </div>
@@ -207,8 +135,8 @@
 							<img class="img-fluid" src="images/image-site.png" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body" style="text-align: justify;">
-							<h4 class="card-header"> 🛡️ Sécurité au travai </h4>
-							<p class="card-text">Prévention des risques et protection des travailleurs.</p>
+							<h4 class="card-header" data-translate="service4_title"> 🛡️ Sécurité au travail </h4>
+							<p class="card-text" data-translate="service4_desc">Prévention des risques et protection des travailleurs.</p>
 						</div>						
 					</div>
 			   </div>
@@ -218,8 +146,8 @@
 							<img class="img-fluid" src="images/hygiene.jpg" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body">
-							<h4 class="card-header"> 🧼 Qualité-Hygiène et Assainissemen </h4>
-							<p class="card-text">Promotion des bonnes pratiques sanitaires et alimentaires.</p>
+							<h4 class="card-header" data-translate="service5_title"> 🧼 Qualité-Hygiène et Assainissement </h4>
+							<p class="card-text" data-translate="service5_desc">Promotion des bonnes pratiques sanitaires et alimentaires.</p>
 						</div>						
 					</div>
 			   </div>
@@ -229,8 +157,8 @@
 							<img class="img-fluid" src="images/conseil.png" alt="" style="height: 250px; object-fit: cover;" />
 						</div>
 						<div class="card-body">
-							<h4 class="card-header"> 💡 Conseils </h4>
-							<p class="card-text">Accompagnement personnalisé pour améliorer vos systèmes internes.</p>
+							<h4 class="card-header" data-translate="service6_title"> 💡 Conseils </h4>
+							<p class="card-text" data-translate="service6_desc">Accompagnement personnalisé pour améliorer vos systèmes internes.</p>
 						</div>
 					</div>
 			   </div>
@@ -240,205 +168,205 @@
 	</div>
 		
 	<div class="container">
-        <!-- Portfolio Section -->
-        <div class="portfolio-main">
-            <h2>Our Portfolio</h2>
+		<!-- Portfolio Section -->
+		<div class="portfolio-main">
+			<h2 data-translate="portfolio_title">Nos Projets Réalisés</h2>
 			<div class="col-lg-12">
 				<div class="project-menu text-center">
-					<button class="btn btn-primary active" data-filter="*">All</button>
-					<button data-filter=".business" class="btn btn-primary">Business</button>
-					<button data-filter=".travel" class="btn btn-primary">Travel</button>
-					<button data-filter=".financial" class="btn btn-primary">Financial</button>
-					<button data-filter=".academic" class="btn btn-primary">Academic</button>
+					<button class="btn btn-primary active" data-filter="*" data-translate="portfolio_all">Tout</button>
+					<button data-filter=".environnement" class="btn btn-primary" data-translate="portfolio_environnement">Environnement</button>
+					<button data-filter=".qhse" class="btn btn-primary" data-translate="portfolio_qhse">QHSE</button>
+					<button data-filter=".audit" class="btn btn-primary" data-translate="portfolio_audit">Audits</button>
+					<button data-filter=".formation" class="btn btn-primary" data-translate="portfolio_formation">Formations</button>
 				</div>
 			</div>
-            <div id="projects" class="projects-main row">
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item financial">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-01.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-01.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item business academic">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-02.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-02.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item travel">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-03.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-03.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item business">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-04.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-04.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item travel">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-05.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-05.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-6 pro-item portfolio-item financial academic">
-                  <div class="card h-100">
-                     <div class="card-img">
-                        <a href="images/portfolio-img-01.jpg" data-fancybox="images">
-                           <img class="card-img-top" src="images/portfolio-img-01.jpg" alt="" />
-                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
-                        </a>
-                     </div>
-                     <div class="card-body">
-                        <h4 class="card-title">
-                           <a href="#">Financial Sustainability</a>
-                        </h4>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- /.row -->
-        </div>
-    </div>
+			<div id="projects" class="projects-main row">
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item environnement">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-01.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-01.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project1">Étude - Projet Pétrolier</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item qhse formation">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-02.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-02.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project2">Formation QHSE</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item audit">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-03.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-03.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project3">Conformité Environnementale</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item environnement">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-04.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-04.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project4">Monitoring Environnemental</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item qhse">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-05.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-05.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project5">Management QHSE</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			   <div class="col-lg-4 col-sm-6 pro-item portfolio-item audit formation">
+				  <div class="card h-100">
+					 <div class="card-img">
+						<a href="images/portfolio-img-01.jpg" data-fancybox="images">
+						   <img class="card-img-top" src="images/portfolio-img-01.jpg" alt="" />
+						   <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+						</a>
+					 </div>
+					 <div class="card-body">
+						<h4 class="card-title">
+						   <a href="#" data-translate="portfolio_project6">Hygiène-Assainissement</a>
+						</h4>
+					 </div>
+				  </div>
+			   </div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
 	
 	<div class="blog-slide">
 		<div class="container">
-			<h2>Our Blog</h2>
+			<h2 data-translate="blog_section_title">Blog</h2>
 			<div class="row">
 				<div class="col-lg-12">
 					<div id="blog-slider" class="owl-carousel">
 						<div class="post-slide">
 							<div class="post-header">
 								<h4 class="title">
-									<a href="#">Latest blog Post</a>
+									<a href="#" data-translate="blog_post1_title">EIES : Clé de la Durabilité</a>
 								</h4>
 								<ul class="post-bar">
-									<li><img src="images/testi_01.png" alt=""><a href="#">Williamson</a></li>
-									<li><i class="fa fa-calendar"></i>02 June 2018</li>
+									<li><img src="images/testi_01.png" alt=""><a href="#" data-translate="blog_post1_author">CEEI Experts</a></li>
+									<li><i class="fa fa-calendar"></i><span data-translate="blog_post1_date">15 Janvier 2025</span></li>
 								</ul>
 							</div>
 							<div class="pic">
 								<img src="images/img-1.jpg" alt="">
 								<ul class="post-category">
-									<li><a href="#">Business</a></li>
-									<li><a href="#">Financ</a></li>
+									<li><a href="#" data-translate="blog_post1_cat1">Environnement</a></li>
+									<li><a href="#" data-translate="blog_post1_cat2">EIES</a></li>
 								</ul>
 							</div>
-							<p class="post-description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida nulla eu massa efficitur, eu hendrerit ipsum efficitur. Morbi vitae velit ac.
+							<p class="post-description" data-translate="blog_post1_desc">
+								L'Étude d'Impact Environnemental et Social est essentielle pour tout projet industriel au Tchad. Découvrez pourquoi elle est cruciale pour la conformité et la durabilité.
 							</p>
 						</div>
 		 
 						<div class="post-slide">
 							<div class="post-header">
 								<h4 class="title">
-									<a href="#">Latest blog Post</a>
+									<a href="#" data-translate="blog_post2_title">Sécurité Pétrolière : Notre Expertise</a>
 								</h4>
 								<ul class="post-bar">
-									<li><img src="images/testi_02.png" alt=""><a href="#">Kristiana</a></li>
-									<li><i class="fa fa-calendar"></i>05 June 2018</li>
+									<li><img src="images/testi_02.png" alt=""><a href="#" data-translate="blog_post2_author">Équipe CEEI</a></li>
+									<li><i class="fa fa-calendar"></i><span data-translate="blog_post2_date">08 Février 2025</span></li>
 								</ul>
 							</div>
 							<div class="pic">
 								<img src="images/img-2.jpg" alt="">
 								<ul class="post-category">
-									<li><a href="#">Business</a></li>
-									<li><a href="#">Financ</a></li>
+									<li><a href="#" data-translate="blog_post2_cat1">QHSE</a></li>
+									<li><a href="#" data-translate="blog_post2_cat2">Sécurité</a></li>
 								</ul>
 							</div>
-							<p class="post-description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida nulla eu massa efficitur, eu hendrerit ipsum efficitur. Morbi vitae velit ac.
+							<p class="post-description" data-translate="blog_post2_desc">
+								Avec notre expérience sur les sites de Komé, Badila et Mangara, nous assurons la sécurité de vos opérations pétrolières selon les normes internationales.
 							</p>
 						</div>
 						
 						<div class="post-slide">
 							<div class="post-header">
 								<h4 class="title">
-									<a href="#">Latest blog Post</a>
+									<a href="#" data-translate="blog_post3_title">Audits QHSE : Conformité Garantie</a>
 								</h4>
 								<ul class="post-bar">
-									<li><img src="images/testi_01.png" alt=""><a href="#">Kristiana</a></li>
-									<li><i class="fa fa-calendar"></i>05 June 2018</li>
+									<li><img src="images/testi_01.png" alt=""><a href="#" data-translate="blog_post3_author">Consultants CEEI</a></li>
+									<li><i class="fa fa-calendar"></i><span data-translate="blog_post3_date">22 Février 2025</span></li>
 								</ul>
 							</div>
 							<div class="pic">
 								<img src="images/img-3.jpg" alt="">
 								<ul class="post-category">
-									<li><a href="#">Business</a></li>
-									<li><a href="#">Financ</a></li>
+									<li><a href="#" data-translate="blog_post3_cat1">Audits</a></li>
+									<li><a href="#" data-translate="blog_post3_cat2">Conformité</a></li>
 								</ul>
 							</div>
-							<p class="post-description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida nulla eu massa efficitur, eu hendrerit ipsum efficitur. Morbi vitae velit ac.
+							<p class="post-description" data-translate="blog_post3_desc">
+								Nos audits rigoureux vérifient la conformité de vos opérations aux normes QHSE. Identifiez les risques et optimisez vos performances avec nos experts.
 							</p>
 						</div>
 						
 						<div class="post-slide">
 							<div class="post-header">
 								<h4 class="title">
-									<a href="#">Latest blog Post</a>
+									<a href="#" data-translate="blog_post4_title">Formations Pratiques en QHSE</a>
 								</h4>
 								<ul class="post-bar">
-									<li><img src="images/testi_02.png" alt=""><a href="#">Kristiana</a></li>
-									<li><i class="fa fa-calendar"></i>05 June 2018</li>
+									<li><img src="images/testi_02.png" alt=""><a href="#" data-translate="blog_post4_author">Formateurs CEEI</a></li>
+									<li><i class="fa fa-calendar"></i><span data-translate="blog_post4_date">05 Mars 2025</span></li>
 								</ul>
 							</div>
 							<div class="pic">
 								<img src="images/img-4.jpg" alt="">
 								<ul class="post-category">
-									<li><a href="#">Business</a></li>
-									<li><a href="#">Financ</a></li>
+									<li><a href="#" data-translate="blog_post4_cat1">Formation</a></li>
+									<li><a href="#" data-translate="blog_post4_cat2">Capacitation</a></li>
 								</ul>
 							</div>
-							<p class="post-description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida nulla eu massa efficitur, eu hendrerit ipsum efficitur. Morbi vitae velit ac.
+							<p class="post-description" data-translate="blog_post4_desc">
+								Renforcez les compétences de vos équipes avec nos formations pratiques. Premiers secours, gestion des déchets, sécurité incendie et bien plus encore.
 							</p>
 						</div>
 					</div>
@@ -447,95 +375,12 @@
 		</div>
 	</div>
 	
-	
-	<!-- Contact Us -->
-	<div class="touch-line">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-				   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-				</div>
-				<div class="col-md-4">
-				   <a class="btn btn-lg btn-secondary btn-block" href="#"> Contact Us </a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- Contact Section Placeholder -->
+	<div id="contact-section-placeholder"></div>
 	
     <!-- /.container -->
-    <!--footer starts from here-->
-    <footer class="footer">
-        <div class="container bottom_border">
-            <div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 col">
-					<h5 class="headin5_amrc col_white_amrc pt2">About Us</h5>
-					<!--headin5_amrc-->
-					<p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-					<ul class="footer-social">
-						<li><a class="facebook hb-xs-margin" href="#"><span class="hb hb-xs spin hb-facebook"><i class="fab fa-facebook-f"></i></span></a></li>
-						<li><a class="twitter hb-xs-margin" href="#"><span class="hb hb-xs spin hb-twitter"><i class="fab fa-twitter"></i></span></a></li>
-						<li><a class="instagram hb-xs-margin" href="#"><span class="hb hb-xs spin hb-instagram"><i class="fab fa-instagram"></i></span></a></li>
-						<li><a class="googleplus hb-xs-margin" href="#"><span class="hb hb-xs spin hb-google-plus"><i class="fab fa-google-plus-g"></i></span></a></li>
-						<li><a class="dribbble hb-xs-margin" href="#"><span class="hb hb-xs spin hb-dribbble"><i class="fab fa-dribbble"></i></span></a></li>
-					</ul>
-				</div>	
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-					<!--headin5_amrc-->
-					<ul class="footer_ul_amrc">
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Default Version</a></li>
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Boxed Version</a></li>
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Our Team </a></li>
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>About Us</a></li>
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Our Services</a></li>
-						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Get In Touch</a></li>
-					</ul>
-					<!--footer_ul_amrc ends here-->
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col">
-					<h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-					<!--headin5_amrc ends here-->
-					<ul class="footer_ul2_amrc">
-						<li>
-							<a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-							<p>Lorem Ipsum is simply dummy...<a href="#">https://www.lipsum.com/</a></p>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-							<p>Lorem Ipsum is simply dummy...<a href="#">https://www.lipsum.com/</a></p>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-							<p>Lorem Ipsum is simply dummy...<a href="#">https://www.lipsum.com/</a></p>
-						</li>
-					</ul>
-					<!--footer_ul2_amrc ends here-->
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 ">
-					<div class="news-box">
-						<h5 class="headin5_amrc col_white_amrc pt2">Newsletter</h5>
-						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-						<form action="#">
-							<div class="input-group">
-								<input class="form-control" placeholder="Search for..." type="text">
-								<span class="input-group-btn">
-								  <button class="btn btn-secondary" type="button">Go!</button>
-								</span>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!-- <div class="container">
-            <p class="copyright text-center">All Rights Reserved. &copy; 2018 <a href="#">CEEI</a>
-            </p>
-        </div> -->
-		<div class="container">
-			<p class="copyright text-center">All Rights Reserved. &copy; <span class="current-year"></span> <a href="index.html">CEEI</a>
-			</p>
-		</div>
-    </footer>
+	<!-- Footer Placeholder -->
+	<div id="footer-placeholder"></div>
 </div>
 	  
 <!-- Bootstrap core JavaScript -->
@@ -548,19 +393,51 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/load-header.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/sticky-header.js"></script>
 <script>
   document.querySelector('.current-year').textContent = new Date().getFullYear();
+  
+  // Language switcher functionality
+  document.querySelectorAll('.lang-option').forEach(option => {
+	option.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  const selectedLang = this.getAttribute('data-lang');
+	  const selectedText = this.innerHTML;
+	  
+	  // Update current language display
+	  document.getElementById('currentLang').innerHTML = selectedText;
+	  
+	  // Update active state
+	  document.querySelectorAll('.lang-option').forEach(opt => opt.classList.remove('active'));
+	  this.classList.add('active');
+	  
+	  // Store language preference
+	  localStorage.setItem('selectedLanguage', selectedLang);
+	  
+	  // Call translation function
+	  if (typeof changeLanguage === 'function') {
+		changeLanguage(selectedLang);
+	  }
+	});
+  });
+  
+  // Load saved language on page load
+  window.addEventListener('DOMContentLoaded', function() {
+	const savedLang = localStorage.getItem('selectedLanguage') || 'fr';
+	const savedOption = document.querySelector(`[data-lang="${savedLang}"]`);
+	if (savedOption) {
+	  document.getElementById('currentLang').innerHTML = savedOption.innerHTML;
+	  document.querySelectorAll('.lang-option').forEach(opt => opt.classList.remove('active'));
+	  savedOption.classList.add('active');
+	}
+	
+	// Apply translations on page load
+	if (typeof changeLanguage === 'function') {
+	  changeLanguage(savedLang);
+	}
+  });
 </script>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en', // Set your default page language (e.g., 'en' for English)
-    includedLanguages: 'en,es,fr,de', // Customize this list with desired languages
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Choose a layout
-    autoDisplay: false // Set to true if you want it to auto-open
-  }, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

@@ -71,6 +71,9 @@ button.btn-secondary:hover{
 .top-bar{
 	background: #1273eb;
 	padding: 4px 0px;
+	position: sticky;
+	top: 0;
+	z-index: 1001;
 }
 .social-media ul{
 	list-style: none;
@@ -102,11 +105,17 @@ button.btn-secondary:hover{
 }
 .wrapper-main{
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .top-nav{
 	background-color: #ffffff !important;
+	position: sticky;
+	top: 36px;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	margin-top: -1px;
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link{
 	padding: 10px 15px;
@@ -477,6 +486,18 @@ button.btn-secondary:hover{
     margin: 0 15px;
     background: #fff;
     border-bottom: 4px solid #1273eb;
+    transition: all 0.3s ease;
+}
+
+/* Center mode styling - make center item larger */
+#blog-slider .owl-item {
+    transform: scale(0.85);
+    transition: all 0.3s ease;
+}
+
+#blog-slider .owl-item.active.center {
+    transform: scale(1);
+    z-index: 10;
 }
 .post-slide .post-header{
     padding: 15px 20px;

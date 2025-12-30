@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Carousel RTL</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <style>
+        .test-box { padding: 50px; background: #f5f5f5; }
+        .test-box h2 { margin-bottom: 30px; }
+        .test-box img { max-width: 150px; height: auto; }
+        button { margin: 10px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+<div class="test-box">
+    <h2>Test Carousel - Click buttons to test LTR/RTL</h2>
+    <button onclick="setLTR()">Set LTR</button>
+    <button onclick="setRTL()">Set RTL</button>
+    <button onclick="reinitCarousel()">Reinitialize</button>
+    <div style="margin-top: 30px;">
+        <div id="test-slider" class="owl-carousel">
+            <div><img src="images/logo-arcep-tchad.jpeg" alt="1" /></div>
+            <div><img src="images/PROPARCO_Logo.png" alt="2" /></div>
+            <div><img src="images/bad-logo.jpg" alt="3" /></div>
+            <div><img src="images/EAIF-logo.png" alt="4" /></div>
+            <div><img src="images/CotonTchad_logo.png" alt="5" /></div>
+            <div><img src="images/sht-logo.jpg" alt="6" /></div>
+        </div>
+    </div>
+    <div style="margin-top: 20px;">
+        <p>Current Direction: <span id="dirStatus">ltr</span></p>
+        <p>Carousel Initialized: <span id="initStatus">false</span></p>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+var sliderHTML = null;
+var initialized = false;
+
+function initCarousel() {
+    var $slider = $("#test-slider");
+    
+    if (!sliderHTML) {
+        sliderHTML = $slider.html();
+    }
+    
+    if (initialized && $slider.data('owlCarousel')) {
+        console.log('Destroying carousel...');
+        $slider.data('owlCarousel').destroy();
+        $slider.html(sliderHTML);
+    }
+    
+    var isRTL = document.documentElement.dir === 'rtl';
+    console.log('Initializing with RTL:', isRTL);
+    
+    $slider.owlCarousel({
+        items: 5,
+        itemsDesktop: [1199, 5],
+        itemsDesktopSmall: [1000, 3],
+        itemsMobile: [650, 2],
+        navigation: false,
+        autoPlay: true,
+        rtl: isRTL
+    });
+    
+    initialized = true;
+    $('#initStatus').text('true');
+}
+
+function setLTR() {
+    document.documentElement.dir = 'ltr';
+    $('#dirStatus').text('ltr');
+    reinitCarousel();
+}
+
+function setRTL() {
+    document.documentElement.dir = 'rtl';
+    $('#dirStatus').text('rtl');
+    reinitCarousel();
+}
+
+function reinitCarousel() {
+    setTimeout(function() {
+        initCarousel();
+    }, 300);
+}
+
+$(document).ready(function() {
+    setTimeout(function() {
+        initCarousel();
+    }, 100);
+});
+</script>
+</body>
+</html>
