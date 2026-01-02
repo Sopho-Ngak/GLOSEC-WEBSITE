@@ -614,6 +614,27 @@ button.btn-secondary:hover{
     .post-header .post-bar li{
         margin-right: 5px;
     }
+    
+    /* Responsive carousel captions for mobile */
+    .slider-main .carousel .carousel-item .carousel-caption h3{
+        font-size: 20px !important;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .slider-main .carousel .carousel-item .carousel-caption p{
+        font-size: 14px !important;
+    }
+}
+
+/* Tablet responsive */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .slider-main .carousel .carousel-item .carousel-caption h3{
+        font-size: 36px !important;
+        font-weight: 700;
+    }
+    .slider-main .carousel .carousel-item .carousel-caption p{
+        font-size: 20px !important;
+    }
 }
 
 .touch-line{
