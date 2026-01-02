@@ -365,7 +365,6 @@ button.btn-secondary:hover{
 }
 .about-main p{
 	font-size: 15px;
-	text-transform: capitalize;
 }
 .about-main ul{
 	padding-left: 20px;
@@ -412,7 +411,6 @@ button.btn-secondary:hover{
 .portfolio-main .card .card-body .card-title a{
 	font-size: 20px;
 	font-weight: 400;
-	text-transform: capitalize;
 	color: #ffffff;
 	margin: 0;
 }
@@ -516,7 +514,6 @@ button.btn-secondary:hover{
 .post-slide .title a{
     font-size: 15px;
     color: #323232;    
-    text-transform: capitalize;
     transition: all 0.4s ease 0s;
 }
 .post-slide .title a:hover{
@@ -536,7 +533,6 @@ button.btn-secondary:hover{
 .post-slide .post-bar li a{
     font-size: 15px;
     color: #808080;
-    text-transform: capitalize;
 }
 .post-slide .post-bar li a:hover{
     text-decoration: none;
@@ -1202,7 +1198,6 @@ footer p {
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
-    text-transform: capitalize;
     margin: 0;
     transition: all 0.5s ease 0s;
 }
@@ -1215,7 +1210,6 @@ footer p {
     font-size: 15px;
     font-style: italic;
     color: #323232;
-    text-transform: capitalize;
     height: 0;
     opacity: 0;
     transform: scale(0);
@@ -1295,7 +1289,6 @@ footer p {
 	color: #323232;
 	text-decoration: none;
 	font-size: 22px;
-	text-transform: capitalize;
 }
 .portfolio-item .card .card-body p{
 	margin-bottom: 0px;
@@ -1493,7 +1486,6 @@ footer p {
 	position: relative;
 	padding: 10px 30px 10px 60px;
 	font-size: 18px;
-	text-transform: capitalize;
 	width: 100%;
 	text-align: left;
 	border: none;

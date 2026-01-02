@@ -152,6 +152,13 @@ const translations = {
         previous: "Précédent",
         next: "Suivant",
         
+        // 404 Error Page
+        error_404_title: "404",
+        error_404_heading: "Oups! Cette page est introuvable.",
+        error_404_message: "Nous ne trouvons pas la page que vous recherchez. Vous pouvez consulter notre page d'accueil.",
+        error_404_button: "Retour à l'accueil",
+        breadcrumb_home: "Accueil",
+        
         // FAQ Page
         faq_page_title: "FAQ",
         faq_page_breadcrumb: "FAQ",
@@ -353,6 +360,14 @@ const translations = {
         previous: "Previous",
         next: "Next",
         
+        // 404 Error Page
+        error_404_title: "404",
+        error_404_heading: "Oops! This page cannot be found.",
+        error_404_message: "We cannot find the page you are looking for. You can check out our homepage.",
+        error_404_button: "Back to Home",
+        breadcrumb_home: "Home",
+        next: "Next",
+        
         // FAQ Page
         faq_page_title: "FAQ",
         faq_page_breadcrumb: "FAQ",
@@ -551,6 +566,14 @@ const translations = {
         get_started: "ابدأ الآن",
         view_details: "عرض التفاصيل",
         previous: "السابق",
+        next: "التالي",
+        
+        // 404 Error Page
+        error_404_title: "404",
+        error_404_heading: "عذراً! لم يتم العثور على هذه الصفحة.",
+        error_404_message: "لا يمكننا العثور على الصفحة التي تبحث عنها. يمكنك زيارة صفحتنا الرئيسية.",
+        error_404_button: "العودة إلى الصفحة الرئيسية",
+        breadcrumb_home: "الرئيسية",
         next: "التالي",
         
         // FAQ Page
