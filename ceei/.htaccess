@@ -1,0 +1,84 @@
+# Enable URL Rewriting
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS (uncomment after SSL is enabled)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove www (or add www - choose one)
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Custom URL Mappings - French-friendly URLs
+RewriteRule ^home$ index.html [L]
+RewriteRule ^accueil$ index.html [L]
+RewriteRule ^a-propos$ about.html [L]
+RewriteRule ^nos-services$ services.html [L]
+RewriteRule ^contact$ contact.html [L]
+RewriteRule ^faq$ faq.html [L]
+RewriteRule ^blog$ blog.html [L]
+RewriteRule ^article$ blog-post.html [L]
+RewriteRule ^portfolio$ portfolio-3-col.html [L]
+RewriteRule ^projets$ portfolio-3-col.html [L]
+RewriteRule ^portfolio-4$ portfolio-4-col.html [L]
+RewriteRule ^projet-detail$ portfolio-item.html [L]
+RewriteRule ^tarifs$ pricing.html [L]
+
+# Redirect old .html URLs to new clean URLs (301 permanent redirect for SEO)
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ /home [R=301,L]
+
+RewriteCond %{THE_REQUEST} /about\.html [NC]
+RewriteRule ^about\.html$ /a-propos [R=301,L]
+
+RewriteCond %{THE_REQUEST} /services\.html [NC]
+RewriteRule ^services\.html$ /nos-services [R=301,L]
+
+RewriteCond %{THE_REQUEST} /contact\.html [NC]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+
+RewriteCond %{THE_REQUEST} /faq\.html [NC]
+RewriteRule ^faq\.html$ /faq [R=301,L]
+
+RewriteCond %{THE_REQUEST} /blog\.html [NC]
+RewriteRule ^blog\.html$ /blog [R=301,L]
+
+RewriteCond %{THE_REQUEST} /blog-post\.html [NC]
+RewriteRule ^blog-post\.html$ /article [R=301,L]
+
+RewriteCond %{THE_REQUEST} /portfolio-3-col\.html [NC]
+RewriteRule ^portfolio-3-col\.html$ /portfolio [R=301,L]
+
+RewriteCond %{THE_REQUEST} /portfolio-4-col\.html [NC]
+RewriteRule ^portfolio-4-col\.html$ /portfolio-4 [R=301,L]
+
+RewriteCond %{THE_REQUEST} /portfolio-item\.html [NC]
+RewriteRule ^portfolio-item\.html$ /projet-detail [R=301,L]
+
+RewriteCond %{THE_REQUEST} /pricing\.html [NC]
+RewriteRule ^pricing\.html$ /tarifs [R=301,L]
+
+# Prevent direct access to certain files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Enable GZIP Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 1 day"
+</IfModule>
