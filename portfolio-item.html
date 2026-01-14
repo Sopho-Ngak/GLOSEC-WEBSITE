@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title> Zonebiz - Business Consulting Bootstrap4 Responsive Template </title>
+	<title> CEEI - Business Consulting </title>
+	<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+	<link rel="apple-touch-icon" href="images/logo.jpg">
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Fontawesome CSS -->
@@ -14,6 +16,10 @@
 	<link href="css/style.css" rel="stylesheet">
 	<!-- Language Support CSS -->
 	<link href="css/language-support.css" rel="stylesheet">
+	
+	<!-- Google AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7682503465515997"
+	     crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper-main">
@@ -24,13 +30,13 @@
 	<div class="full-title">
 		<div class="container">
 			<!-- Page Heading/Breadcrumbs -->
-			<h1 class="mt-4 mb-3"> Portfolio Item </h1>
+			<h1 class="mt-4 mb-3" data-translate="portfolio_item_title"> Portfolio Item </h1>
 			<div class="breadcrumb-main">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item">
-						<a href="index.html">Home</a>
+						<a href="index.html" data-translate="breadcrumb_home">Home</a>
 					</li>
-					<li class="breadcrumb-item active">Portfolio Item</li>
+					<li class="breadcrumb-item active" data-translate="portfolio_item_breadcrumb">Portfolio Item</li>
 				</ol>
 			</div>
 		</div>
@@ -40,10 +46,10 @@
 		<div class="container">
 			<!-- Portfolio Item Row -->
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<img class="img-fluid" src="images/portfolio-big-Item.jpg" alt="" />
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<h3 class="my-3">Phasellus et nisi ut sapien ultricies laoreet.</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
 					<h3 class="my-3">Project info</h3>
@@ -66,7 +72,7 @@
 			<!-- /.row -->
 			<div class="related-projects">
 				<!-- Related Projects Row -->
-				<h3>Related Projects</h3>
+				<h3 style="color: #1273eb;" data-translate="portfolio_related_projects">Related Projects</h3>
 				<div class="row">
 					<div class="col-md-3 col-sm-6 mb-4">
 						<a href="#">
@@ -106,7 +112,10 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/script.js"></script>
+<script src="js/sticky-header.js"></script>
 <script src="js/load-header.js"></script>
 <script src="js/translations.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/portfolio-details.js"></script>
 </body>
 </html>

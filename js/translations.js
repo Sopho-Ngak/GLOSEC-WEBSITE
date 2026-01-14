@@ -99,6 +99,27 @@ const translations = {
         portfolio_project5: "Management QHSE",
         portfolio_project6: "Hygiène-Assainissement",
         
+        // Portfolio Details Page
+        portfolio_item_title: "Élément de Portfolio",
+        portfolio_item_breadcrumb: "Élément de Portfolio",
+        portfolio_project_info: "Informations du Projet",
+        portfolio_category: "Catégorie",
+        portfolio_client: "Client",
+        portfolio_consultant: "Consultant",
+        portfolio_promoter: "Promoteur",
+        portfolio_beneficiary: "Bénéficiaire",
+        portfolio_financing: "Financement",
+        portfolio_responsible: "Responsable",
+        portfolio_contact: "Contact",
+        portfolio_key_personnel: "Personnel clé",
+        portfolio_country: "Pays",
+        portfolio_start_date: "Date de démarrage",
+        portfolio_end_date: "Date de fin",
+        portfolio_website: "Site Web",
+        portfolio_date: "Date",
+        portfolio_related_projects: "Projets Connexes",
+        portfolio_page_title: "Portfolio",
+        
         // Team Section
         team_title: "Notre Équipe",
         team_desc: "Notre équipe d'experts dévoués travaille avec passion pour offrir des solutions environnementales et de sécurité de qualité supérieure.",
@@ -319,6 +340,27 @@ const translations = {
         portfolio_project4: "Environmental Monitoring",
         portfolio_project5: "QHSE Management",
         portfolio_project6: "Hygiene-Sanitation",
+        
+        // Portfolio Details Page
+        portfolio_item_title: "Portfolio Item",
+        portfolio_item_breadcrumb: "Portfolio Item",
+        portfolio_project_info: "Project Information",
+        portfolio_category: "Category",
+        portfolio_client: "Client",
+        portfolio_consultant: "Consultant",
+        portfolio_promoter: "Promoter",
+        portfolio_beneficiary: "Beneficiary",
+        portfolio_financing: "Financing",
+        portfolio_responsible: "Responsible",
+        portfolio_contact: "Contact",
+        portfolio_key_personnel: "Key Personnel",
+        portfolio_country: "Country",
+        portfolio_start_date: "Start Date",
+        portfolio_end_date: "End Date",
+        portfolio_website: "Website",
+        portfolio_date: "Date",
+        portfolio_related_projects: "Related Projects",
+        portfolio_page_title: "Portfolio",
         
         // Team Section
         team_title: "Our Team",
@@ -543,6 +585,27 @@ const translations = {
         portfolio_project5: "إدارة الجودة والصحة والسلامة",
         portfolio_project6: "النظافة والصرف الصحي",
         
+        // Portfolio Details Page
+        portfolio_item_title: "عنصر المعرض",
+        portfolio_item_breadcrumb: "عنصر المعرض",
+        portfolio_project_info: "معلومات المشروع",
+        portfolio_category: "الفئة",
+        portfolio_client: "العميل",
+        portfolio_consultant: "الاستشاري",
+        portfolio_promoter: "المروج",
+        portfolio_beneficiary: "المستفيد",
+        portfolio_financing: "التمويل",
+        portfolio_responsible: "المسؤول",
+        portfolio_contact: "الاتصال",
+        portfolio_key_personnel: "الموظفون الرئيسيون",
+        portfolio_country: "البلد",
+        portfolio_start_date: "تاريخ البداية",
+        portfolio_end_date: "تاريخ النهاية",
+        portfolio_website: "الموقع الإلكتروني",
+        portfolio_date: "التاريخ",
+        portfolio_related_projects: "المشاريع ذات الصلة",
+        portfolio_page_title: "المعرض",
+        
         // Team Section
         team_title: "فريقنا",
         team_desc: "يعمل فريقنا من الخبراء المتفانين بشغف لتقديم حلول بيئية وأمنية عالية الجودة.",
@@ -746,6 +809,29 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const lang = this.getAttribute('data-lang');
             setLanguage(lang);
+            
+            // Close mobile navbar after language selection
+            setTimeout(function() {
+                const navbarCollapse = document.getElementById('navbarResponsive');
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    // Remove the show class
+                    navbarCollapse.classList.remove('show');
+                    navbarCollapse.classList.remove('collapsing');
+                    
+                    // Update toggler attributes
+                    if (navbarToggler) {
+                        navbarToggler.classList.add('collapsed');
+                        navbarToggler.setAttribute('aria-expanded', 'false');
+                    }
+                    
+                    // Also try jQuery method if available
+                    if (typeof $ !== 'undefined' && $.fn.collapse) {
+                        $('#navbarResponsive').collapse('hide');
+                    }
+                }
+            }, 100);
         });
     });
 });

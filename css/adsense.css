@@ -1,0 +1,56 @@
+/* Google AdSense Styling */
+
+/* Header Ad */
+.header-ad {
+    max-width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Sidebar Ad */
+.sidebar-ad {
+    margin: 20px 0;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* In-content Ad */
+.content-ad {
+    margin: 30px auto;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* Footer Ad */
+.footer-ad {
+    margin: 20px 0;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Ad Container */
+.ad-container {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header-ad,
+    .sidebar-ad,
+    .content-ad,
+    .footer-ad {
+        padding: 8px;
+        margin: 10px 0;
+    }
+}
