@@ -520,7 +520,7 @@ const portfolioDataMultilang = {
             en: "Business Consulting",
             ar: "الاستشارات التجارية"
         },
-        images: ["images/djarmaya-raf.jpg","images/djarma-raf.jpg", "images/Sedigui-djarmaya.jpg", "images/sidigui-djar.jpg"],
+        images: ["images/djarmaya-raf.jpg", "images/pipeline-1.jpeg", "images/pipeline-2.jpeg", "images/Sedigui-djarmaya.jpg", "images/sidigui-djar.jpg"],
         image: "images/djarmaya-raf.jpg",
         client: "SHT",
         consultant: "CEEI - GLOSEC Consulting",

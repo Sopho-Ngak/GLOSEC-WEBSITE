@@ -137,6 +137,8 @@ const translations = {
         team_member6_role: "Assistante de Direction et Comptable",
         team_member7_name: "M. Univers Nambaye Berrin",
         team_member7_role: "Chef topographe",
+        team_member8_name: "M. Allarabaye Ezechiel",
+        team_member8_role: "Environnementaliste junior",
         
         // Contact Section
         contact_title: "Contactez-Nous",
@@ -379,6 +381,8 @@ const translations = {
         team_member6_role: "Executive Assistant and Accountant",
         team_member7_name: "Mr. Univers Nambaye Berrin",
         team_member7_role: "Chief Surveyor",
+        team_member8_name: "Mr. Allarabaye Ezechiel",
+        team_member8_role: "Junior Environmentalist",
         
         // Contact Section
         contact_title: "Contact Us",
@@ -623,6 +627,8 @@ const translations = {
         team_member6_role: "مساعدة تنفيذية ومحاسبة",
         team_member7_name: "السيد يونيفيرس نامباي بيرين",
         team_member7_role: "رئيس المساحين",
+        team_member8_name: "السيد ألراباي إيزيكيل",
+        team_member8_role: "اختصاصي بيئي مبتدئ",
         
         // Contact Section
         contact_title: "اتصل بنا",
